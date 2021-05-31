@@ -1,0 +1,1 @@
+for i in $(grep -lr '' /var/spool/exim/input/);do cat $i | grep "Subject:";done
