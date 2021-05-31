@@ -1,0 +1,2 @@
+grep "for .*@.*" /var/log/exim_mainlog | grep "<= <>" | awk -F"T=" '{print $2}' | awk '{print $NF,$0}' | awk -F" for" '{print $1}' | sort | uniq -c | sort -n
+
