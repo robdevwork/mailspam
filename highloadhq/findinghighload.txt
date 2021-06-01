@@ -1,0 +1,11 @@
+
+ps aux | awk '{print $11}' | sort | uniq -c | sort -nk1 | tail -n5
+ps aux | awk '{print $1}' | sort | uniq -c | sort -nk1 | tail -n5
+
+processes per thread/ user
+
+sar -f sa26
+
+
+
+top -b -n 1 | head -n 12
