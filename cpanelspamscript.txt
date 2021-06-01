@@ -1,0 +1,1 @@
+perl <(curl -s https://raw.githubusercontent.com/CpanelInc/tech-SSE/master/sse.pl) -s
